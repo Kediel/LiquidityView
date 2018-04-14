@@ -9,7 +9,7 @@ Welcome to edit this text file appropriately..
 
 
 
-
+****************************************** REMEMBER TO SYNC THE GRADEL AFTER YOU PULL *******************************************************************************************
 
 
 Financial article links:
@@ -26,5 +26,7 @@ Google Firebase Links:
 
 https://firebase.google.com/docs/android/setup?utm_source=welcome&utm_medium=email&utm_campaign=welcome_B
 
+
 Banking API Links:
 https://github.com/plaid/link/tree/master/webviews/examples/android
+>>>>>>> f3bd8dad718f3baec376e433e31430c3935f7bdb
