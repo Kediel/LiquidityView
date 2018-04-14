@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LiquidityView</string>
+    <string name="student_loan">0.03</string>
+    <string name="car_loan">0.12</string>
+    <string name="credit_card">0.239</string>
+    <string name="investment">0.06</string>
+    <string name="income_tax">0.06</string>
+    <string name="medicare">0.0765</string>
+</resources>
