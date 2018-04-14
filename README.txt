@@ -33,3 +33,9 @@ https://github.com/plaid/link/tree/master/webviews/examples/android -----> Legac
 
 https://www.openbankproject.com -----> Try this instead
 https://github.com/OpenBankProject/Hello-OBP-OAuth1.0a-Android --> github for SDK and example
+
+
+json:
+
+https://catalog.data.gov/dataset/connecticut-student-loan-foundation-financial-data-fy-2017
+
