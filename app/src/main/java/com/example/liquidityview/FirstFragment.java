@@ -31,36 +31,44 @@ public class FirstFragment extends Fragment {
 
         myView = inflater.inflate(R.layout.first_layout, container, false);
 
-        HorizontalBarChart barChart = (HorizontalBarChart) findViewById(R.id.chart1);
+        HorizontalBarChart barChart = (HorizontalBarChart) myView.findViewById(R.id.chart1);
 
-
-        ArrayList<BarEntry> barEntries = new ArrayList<>();
-
-        barEntries.add(new BarEntry(240f,0));
-        barEntries.add(new BarEntry(88f,1));
-        barEntries.add(new BarEntry(150f,2));
-        barEntries.add(new BarEntry(55f,3));
-        barEntries.add(new BarEntry(230f,5));
-        barEntries.add(new BarEntry(45f,5));
-
-        BarDataSet barDataSet = new BarDataSet (barEntries,"Categories");
-
-        ArrayList<String> theExpense = new ArrayList<>();
-
-        theExpense.add("School Expenses");
-        theExpense.add("Transport");
-        theExpense.add("Health");
-        theExpense.add("Entertainment");
-        theExpense.add("Clothing");
-        theExpense.add("Food");
-        theExpense.add("Miscellaneous");
-
-        BarData data = new BarData (theExpense, barDataSet);
-        barChart.setData(data);
-
-        barChart.setDescription("Expenses Breakdown");
-        barDataSet.setColors(ColorTemplate.VORDIPLOM_COLORS);
+        setupBarChart();
 
         return myView;
+    }
+
+    private void setupBarChart() {
+
+
+        ArrayList<BarEntry> barEntry = new ArrayList<>();
+
+        barEntry.add(new BarEntry(240f,0));
+        barEntry.add(new BarEntry(88f,1));
+        barEntry.add(new BarEntry(150f,2));
+        barEntry.add(new BarEntry(55f,3));
+        barEntry.add(new BarEntry(230f,4));
+        barEntry.add(new BarEntry(45f,5));
+        barEntry.add(new BarEntry(45f,6));
+
+        BarDataSet dataSet = new BarDataSet(barEntry,"Categories");
+
+        ArrayList<String> labels = new ArrayList<>();
+
+        labels.add("School Expenses");
+        labels.add("Transport");
+        labels.add("Health");
+        labels.add("Entertainment");
+        labels.add("Clothing");
+        labels.add("Food");
+        labels.add("Miscellaneous");
+
+        BarData data = new BarData(labels, dataSet);
+        barChart.setData(data);
+
+//        barChart.setDescription("Expenses Breakdown");
+        dataSet.setColors(ColorTemplate.VORDIPLOM_COLORS);
+
+        barChart.invalidate();
     }
 }
