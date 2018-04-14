@@ -50,8 +50,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         PieDataSet dataSet = new PieDataSet(pieEntries, "Budget This Month");
+
         dataSet.setColors(ColorTemplate.MATERIAL_COLORS);
         dataSet.setValueTextSize(15f);
+
         PieData data = new PieData(dataSet);
 
         PieChart chart = (PieChart) findViewById(R.id.chart);

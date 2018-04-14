@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">LiquidityView</string>
-<<<<<<< HEAD
     <string name="title_activity_financial_breakdown">Financial Breakdown</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
