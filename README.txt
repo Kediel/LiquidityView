@@ -6,10 +6,10 @@ We are creating an mobile application on Android Studio to help students of all 
 NO longer will we be talked down to by baby boomers on our bad financial practices.
 The app will link relevant articles and statistics to show students the need for personal finance.
 Welcome to edit this text file appropriately.. 
-https://www.mint.com/
 
 
-****************************************** REMEMBER TO SYNC THE GRADEL AFTER YOU PULL *******************************************************************************************
+
+
 
 
 Financial article links:
@@ -26,8 +26,8 @@ Google Firebase Links:
 
 https://firebase.google.com/docs/android/setup?utm_source=welcome&utm_medium=email&utm_campaign=welcome_B
 
-
 Banking API Links:
+<<<<<<< HEAD
 https://github.com/plaid/link/tree/master/webviews/examples/android -----> Legacy API, will be deleted in April 2018...
 >>>>>>> f3bd8dad718f3baec376e433e31430c3935f7bdb
 
@@ -39,3 +39,6 @@ json:
 
 https://catalog.data.gov/dataset/connecticut-student-loan-foundation-financial-data-fy-2017
 
+=======
+https://github.com/plaid/link/tree/master/webviews/examples/android
+>>>>>>> parent of 5bfeb7a... Link screen to View Breakdown

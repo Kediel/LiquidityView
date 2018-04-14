@@ -16,15 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".FinancialBreakdown"
-            android:label="@string/title_activity_financial_breakdown"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.liquidityview.MainActivity" />
-        </activity>
     </application>
 
 </manifest>

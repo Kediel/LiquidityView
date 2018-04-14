@@ -9,6 +9,7 @@
 /captures
 .externalNativeBuild
 .idea/misc.xml
+<<<<<<< HEAD
 .idea/caches/build_file_checksums.ser
 <<<<<<< HEAD
 app/src/main/res/values/strings.xml
@@ -19,3 +20,5 @@ app/src/main/res/layout/activity_main.xml
 app/src/main/res/layout/activity_main.xml
 =======
 >>>>>>> 123c7130432d69b0ddcdd1c81e1c425c80199dd0
+=======
+>>>>>>> parent of 5bfeb7a... Link screen to View Breakdown
