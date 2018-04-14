@@ -25,3 +25,6 @@ https://www.investopedia.com/terms/c/compoundinterest.asp
 Google Firebase Links:
 
 https://firebase.google.com/docs/android/setup?utm_source=welcome&utm_medium=email&utm_campaign=welcome_B
+
+Banking API Links:
+https://github.com/plaid/link/tree/master/webviews/examples/android
