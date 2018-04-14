@@ -1,0 +1,429 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "v6ie-926n",
+      "name" : "Connecticut Student Loan Foundation Financial Data FY 2017",
+      "averageRating" : 0,
+      "category" : "Government",
+      "createdAt" : 1521050702,
+      "displayType" : "table",
+      "downloadCount" : 10,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1521052108,
+      "locale" : "en_US",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 28214748,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1521050734,
+      "publicationGroup" : 14935433,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1521050704,
+      "rowsUpdatedBy" : "qkr3-bs6f",
+      "tableId" : 14935433,
+      "totalTimesRated" : 0,
+      "viewCount" : 18,
+      "viewLastModified" : 1521051020,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 349704216,
+        "name" : "Name",
+        "dataTypeName" : "text",
+        "fieldName" : "name",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 62404425,
+        "width" : 148,
+        "cachedContents" : {
+          "largest" : "Starfish Computer Corporation",
+          "non_null" : 69,
+          "null" : 0,
+          "top" : [ {
+            "item" : "CHEFA",
+            "count" : 20
+          }, {
+            "item" : "CHESLA",
+            "count" : 19
+          }, {
+            "item" : "CohnReznick LLP",
+            "count" : 18
+          }, {
+            "item" : "Connecticare Inc & Affiliates",
+            "count" : 17
+          }, {
+            "item" : "Crowe Horwath",
+            "count" : 16
+          }, {
+            "item" : "Education Solution Partners, LLC",
+            "count" : 15
+          }, {
+            "item" : "GCCFC 2007-GG9 Columbus",
+            "count" : 14
+          }, {
+            "item" : "Iron Mountain",
+            "count" : 13
+          }, {
+            "item" : "KeyBank",
+            "count" : 12
+          }, {
+            "item" : "Max Bibos",
+            "count" : 11
+          }, {
+            "item" : "Premiere Global Service",
+            "count" : 10
+          }, {
+            "item" : "Quickbooks",
+            "count" : 9
+          }, {
+            "item" : "RMI Associates LLC",
+            "count" : 8
+          }, {
+            "item" : "Starfish Computer Corporation",
+            "count" : 7
+          } ],
+          "smallest" : "CHEFA"
+        },
+        "format" : { }
+      }, {
+        "id" : 349704217,
+        "name" : "Expense Category",
+        "dataTypeName" : "text",
+        "fieldName" : "expense_category",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 62404426,
+        "width" : 292,
+        "cachedContents" : {
+          "largest" : "Telephone & Internet Access",
+          "non_null" : 69,
+          "null" : 0,
+          "top" : [ {
+            "item" : "Support Services",
+            "count" : 20
+          }, {
+            "item" : "Insurance",
+            "count" : 19
+          }, {
+            "item" : "Professional Services",
+            "count" : 18
+          }, {
+            "item" : "Emp Medical, Dental & Life",
+            "count" : 17
+          }, {
+            "item" : "Postage &  Delivery",
+            "count" : 16
+          }, {
+            "item" : "Meetings & Workshops",
+            "count" : 15
+          }, {
+            "item" : "Non Professional Services",
+            "count" : 14
+          }, {
+            "item" : "Misc",
+            "count" : 13
+          }, {
+            "item" : "Telephone & Internet Access",
+            "count" : 12
+          } ],
+          "smallest" : "Emp Medical, Dental & Life"
+        },
+        "format" : { }
+      }, {
+        "id" : 349704218,
+        "name" : "Payment Date",
+        "dataTypeName" : "calendar_date",
+        "fieldName" : "payment_date",
+        "position" : 5,
+        "renderTypeName" : "calendar_date",
+        "tableColumnId" : 62404427,
+        "width" : 244,
+        "cachedContents" : {
+          "largest" : "2017-06-29T00:00:00",
+          "non_null" : 69,
+          "null" : 0,
+          "top" : [ {
+            "item" : "2016-08-09T00:00:00",
+            "count" : 20
+          }, {
+            "item" : "2016-10-24T00:00:00",
+            "count" : 19
+          }, {
+            "item" : "2017-01-30T00:00:00",
+            "count" : 18
+          }, {
+            "item" : "2017-04-19T00:00:00",
+            "count" : 17
+          }, {
+            "item" : "2016-10-13T00:00:00",
+            "count" : 16
+          }, {
+            "item" : "2017-01-05T00:00:00",
+            "count" : 15
+          }, {
+            "item" : "2017-05-01T00:00:00",
+            "count" : 14
+          }, {
+            "item" : "2016-08-01T00:00:00",
+            "count" : 13
+          }, {
+            "item" : "2016-12-05T00:00:00",
+            "count" : 12
+          }, {
+            "item" : "2017-02-02T00:00:00",
+            "count" : 11
+          }, {
+            "item" : "2017-03-02T00:00:00",
+            "count" : 10
+          }, {
+            "item" : "2017-01-03T00:00:00",
+            "count" : 9
+          }, {
+            "item" : "2017-06-29T00:00:00",
+            "count" : 8
+          }, {
+            "item" : "2017-02-14T00:00:00",
+            "count" : 7
+          } ],
+          "smallest" : "2016-07-01T00:00:00"
+        },
+        "format" : {
+          "view" : "date"
+        }
+      }, {
+        "id" : 349704219,
+        "name" : " Amount ",
+        "dataTypeName" : "money",
+        "fieldName" : "amount",
+        "position" : 6,
+        "renderTypeName" : "money",
+        "tableColumnId" : 62404428,
+        "width" : 196,
+        "cachedContents" : {
+          "largest" : "37000.00",
+          "non_null" : 69,
+          "average" : "7625.212028985507",
+          "null" : 0,
+          "top" : [ {
+            "item" : "13370.22",
+            "count" : 20
+          }, {
+            "item" : "204.00",
+            "count" : 19
+          }, {
+            "item" : "222.00",
+            "count" : 18
+          }, {
+            "item" : "34000.00",
+            "count" : 17
+          }, {
+            "item" : "53.86",
+            "count" : 16
+          }, {
+            "item" : "62.09",
+            "count" : 15
+          }, {
+            "item" : "1350.00",
+            "count" : 14
+          }, {
+            "item" : "159.93",
+            "count" : 13
+          } ],
+          "smallest" : "9.00",
+          "sum" : "526139.63"
+        },
+        "format" : {
+          "decimalSeparator" : ".",
+          "groupSeparator" : ","
+        }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "custom_fields" : {
+          "Agency" : {
+            "Agency" : ""
+          },
+          "Microsites" : {
+            "Local" : ""
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "owner" : {
+        "id" : "qkr3-bs6f",
+        "displayName" : "Office of the State Comptroller",
+        "profileImageUrlLarge" : "/api/users/qkr3-bs6f/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/qkr3-bs6f/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/qkr3-bs6f/profile_images/TINY",
+        "screenName" : "Office of the State Comptroller",
+        "type" : "interactive",
+        "flags" : [ "siteMember" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "qkr3-bs6f",
+        "displayName" : "Office of the State Comptroller",
+        "profileImageUrlLarge" : "/api/users/qkr3-bs6f/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/qkr3-bs6f/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/qkr3-bs6f/profile_images/TINY",
+        "screenName" : "Office of the State Comptroller",
+        "type" : "interactive",
+        "flags" : [ "siteMember" ]
+      },
+      "flags" : [ "default", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ 1, "E1A518A2-EA73-4EED-A098-4F2FC2203AEC", 1, 1521050703, "913101", 1521050703, "913101", null, "CHEFA", "Support Services", "2016-08-09T00:00:00", "12602.85" ]
+, [ 2, "D39A5BDF-1A4C-4B34-815C-7B13E804EDAC", 2, 1521050703, "913101", 1521050703, "913101", null, "CHEFA", "Support Services", "2016-10-24T00:00:00", "13370.22" ]
+, [ 3, "3BBFE8D0-34C1-4F45-AFA5-4A03B77DE12A", 3, 1521050703, "913101", 1521050703, "913101", null, "CHEFA", "Support Services", "2017-01-30T00:00:00", "13370.22" ]
+, [ 4, "F7F1F7B0-F926-4943-8335-F33B0E58A5C6", 4, 1521050703, "913101", 1521050703, "913101", null, "CHEFA", "Support Services", "2017-04-19T00:00:00", "13370.22" ]
+, [ 5, "559F927A-1B69-4AED-9E06-FA01B4FC4728", 5, 1521050703, "913101", 1521050703, "913101", null, "CHESLA", "Insurance", "2016-10-13T00:00:00", "2340.00" ]
+, [ 6, "D1EEACF1-8A17-4C37-915C-C44B9E47DA93", 6, 1521050703, "913101", 1521050703, "913101", null, "CohnReznick LLP", "Professional Services", "2016-10-24T00:00:00", "28999.25" ]
+, [ 7, "06577556-0564-4072-8FF3-79731F022AEB", 7, 1521050703, "913101", 1521050703, "913101", null, "CohnReznick LLP", "Professional Services", "2017-01-03T00:00:00", "2000.00" ]
+, [ 8, "CA982A40-CFCE-4DC7-9CDD-F4A77992CF93", 8, 1521050703, "913101", 1521050703, "913101", null, "CohnReznick LLP", "Professional Services", "2017-01-05T00:00:00", "5000.00" ]
+, [ 9, "3BB0C352-9ACF-402E-A4CD-682EBB5B6E4F", 9, 1521050703, "913101", 1521050703, "913101", null, "Connecticare Inc & Affiliates", "Emp Medical, Dental & Life", "2016-07-20T00:00:00", "408.00" ]
+, [ 10, "654AB95D-34C8-4253-B0D5-ECFBCA43467C", 10, 1521050703, "913101", 1521050703, "913101", null, "Connecticare Inc & Affiliates", "Emp Medical, Dental & Life", "2016-08-17T00:00:00", "204.00" ]
+, [ 11, "2C93DBD0-99A1-4F88-A967-E9BE96A2C5DC", 11, 1521050703, "913101", 1521050703, "913101", null, "Connecticare Inc & Affiliates", "Emp Medical, Dental & Life", "2016-09-22T00:00:00", "204.00" ]
+, [ 12, "1088FB2A-CEF2-47FA-B5AB-D2A8E33066CB", 12, 1521050703, "913101", 1521050703, "913101", null, "Connecticare Inc & Affiliates", "Emp Medical, Dental & Life", "2016-10-13T00:00:00", "204.00" ]
+, [ 13, "5931DE09-99AF-44AD-8002-45EB50755AB7", 13, 1521050703, "913101", 1521050703, "913101", null, "Connecticare Inc & Affiliates", "Emp Medical, Dental & Life", "2016-11-16T00:00:00", "204.00" ]
+, [ 14, "5DE4EFDA-164B-4319-8C4B-F84969F943BA", 14, 1521050703, "913101", 1521050703, "913101", null, "Connecticare Inc & Affiliates", "Emp Medical, Dental & Life", "2017-03-28T00:00:00", "444.00" ]
+, [ 15, "299D870B-AA0D-4368-A6B3-7FE02DF3C5D3", 15, 1521050703, "913101", 1521050703, "913101", null, "Connecticare Inc & Affiliates", "Emp Medical, Dental & Life", "2017-05-01T00:00:00", "222.00" ]
+, [ 16, "D38062E9-F34B-4959-A742-E1C68B10BDEE", 16, 1521050703, "913101", 1521050703, "913101", null, "Connecticare Inc & Affiliates", "Emp Medical, Dental & Life", "2017-05-19T00:00:00", "222.00" ]
+, [ 17, "C96B0E54-EA15-4697-AC3A-393FBC8C37B5", 17, 1521050703, "913101", 1521050703, "913101", null, "Connecticare Inc & Affiliates", "Emp Medical, Dental & Life", "2017-06-19T00:00:00", "222.00" ]
+, [ 18, "84E98D34-DF89-4E7C-B4E5-3E081469B1AF", 18, 1521050703, "913101", 1521050703, "913101", null, "Crowe Horwath", "Professional Services", "2016-08-09T00:00:00", "13662.00" ]
+, [ 19, "B8B64982-0983-4808-9031-696859C528F5", 19, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Professional Services", "2016-07-01T00:00:00", "37000.00" ]
+, [ 20, "7D46361E-9ECA-44EE-8799-090061BA5B8D", 20, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Postage &  Delivery", "2016-08-01T00:00:00", "58.05" ]
+, [ 21, "89A67B02-9E1E-48F8-B7FF-3108B5DA13D7", 21, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Professional Services", "2016-08-01T00:00:00", "34000.00" ]
+, [ 22, "7887A9B3-A60E-4366-ACC4-532C6E2B71AD", 22, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Professional Services", "2016-09-06T00:00:00", "34000.00" ]
+, [ 23, "CC7E18FD-779D-4D0A-9B3A-2E65104B46A2", 23, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Professional Services", "2016-10-04T00:00:00", "34000.00" ]
+, [ 24, "03E2DB28-22C3-46AC-A18D-A6BAD708B570", 24, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Professional Services", "2016-11-02T00:00:00", "34000.00" ]
+, [ 25, "E2A6DA94-19B0-4E9B-B63E-184CBDE2006D", 25, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Postage &  Delivery", "2016-12-05T00:00:00", "209.44" ]
+, [ 26, "1A790F33-B36C-4BA9-BF25-4E750D84EE46", 26, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Professional Services", "2016-12-05T00:00:00", "35000.00" ]
+, [ 27, "5B526B85-3C68-446B-B8FC-BB5621125A5B", 27, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Postage &  Delivery", "2017-01-05T00:00:00", "225.80" ]
+, [ 28, "20841329-33BA-404C-B89A-C2DB7028982D", 28, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Professional Services", "2017-01-05T00:00:00", "34000.00" ]
+, [ 29, "E6704092-7EC0-4D7A-8E30-5E7C3563E867", 29, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Postage &  Delivery", "2017-02-02T00:00:00", "166.00" ]
+, [ 30, "FC58CD6E-04A6-4EF3-A9B3-1CC93A837EB1", 30, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Professional Services", "2017-02-02T00:00:00", "34000.00" ]
+, [ 31, "A3120644-A217-493F-82C1-2424A2C4E638", 31, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Postage &  Delivery", "2017-03-02T00:00:00", "46.55" ]
+, [ 32, "440EA01B-A8F1-49B5-9296-44CA430A8A75", 32, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Professional Services", "2017-03-02T00:00:00", "34000.00" ]
+, [ 33, "29418559-233E-4733-8401-653377D60406", 33, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Professional Services", "2017-04-07T00:00:00", "34000.00" ]
+, [ 34, "0BEBA66C-DA9D-4664-8BAF-1795B327E7DF", 34, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Professional Services", "2017-05-01T00:00:00", "34000.00" ]
+, [ 35, "573719DF-655E-4450-BD2A-17924E911112", 35, 1521050703, "913101", 1521050703, "913101", null, "Education Solution Partners, LLC", "Professional Services", "2017-06-01T00:00:00", "34000.00" ]
+, [ 36, "D475C0AB-1C99-4020-ACD5-753FA41EB81B", 36, 1521050703, "913101", 1521050703, "913101", null, "GCCFC 2007-GG9 Columbus", "Meetings & Workshops", "2016-08-09T00:00:00", "17.00" ]
+, [ 37, "CDA6CCB1-88B4-4A1B-B8CE-82AC0B793AF3", 37, 1521050703, "913101", 1521050703, "913101", null, "GCCFC 2007-GG9 Columbus", "Meetings & Workshops", "2016-10-24T00:00:00", "23.00" ]
+, [ 38, "513C1888-0D2B-4233-A743-1B406300421F", 38, 1521050703, "913101", 1521050703, "913101", null, "GCCFC 2007-GG9 Columbus", "Meetings & Workshops", "2017-01-30T00:00:00", "9.00" ]
+, [ 39, "368B0D63-8E68-4E15-BDAD-AECC4532F5FB", 39, 1521050703, "913101", 1521050703, "913101", null, "GCCFC 2007-GG9 Columbus", "Meetings & Workshops", "2017-04-19T00:00:00", "18.00" ]
+, [ 40, "4DC049CA-E795-4034-AACA-F2B58AD4A857", 40, 1521050703, "913101", 1521050703, "913101", null, "Iron Mountain", "Non Professional Services", "2016-07-11T00:00:00", "53.86" ]
+, [ 41, "968984D5-59F7-4014-92C7-C5F44038FE10", 41, 1521050703, "913101", 1521050703, "913101", null, "Iron Mountain", "Non Professional Services", "2016-08-09T00:00:00", "53.86" ]
+, [ 42, "62709C24-5DAD-4EFD-A023-EFB6C44F5DCF", 42, 1521050703, "913101", 1521050703, "913101", null, "Iron Mountain", "Non Professional Services", "2016-08-09T00:00:00", "90.00" ]
+, [ 43, "AA2E36EC-6951-4B5C-BA2B-F187CDEB0D0F", 43, 1521050703, "913101", 1521050703, "913101", null, "Iron Mountain", "Non Professional Services", "2016-09-08T00:00:00", "53.86" ]
+, [ 44, "8285C6F1-4E6A-4356-BC33-B4AE46C4A974", 44, 1521050703, "913101", 1521050703, "913101", null, "Iron Mountain", "Non Professional Services", "2016-10-13T00:00:00", "53.86" ]
+, [ 45, "C56A099A-595D-4EFA-AAB9-30F63BF0CA4E", 45, 1521050703, "913101", 1521050703, "913101", null, "Iron Mountain", "Non Professional Services", "2016-11-10T00:00:00", "53.86" ]
+, [ 46, "A4E58EC0-1CF0-4652-9B04-D515F7619175", 46, 1521050703, "913101", 1521050703, "913101", null, "Iron Mountain", "Non Professional Services", "2016-12-05T00:00:00", "53.86" ]
+, [ 47, "5D804E87-019E-4C00-BE02-333C4F69FF52", 47, 1521050703, "913101", 1521050703, "913101", null, "Iron Mountain", "Non Professional Services", "2017-01-09T00:00:00", "53.86" ]
+, [ 48, "91AEAC3A-F71E-4466-A0D1-4F4F6FCC0B9E", 48, 1521050703, "913101", 1521050703, "913101", null, "Iron Mountain", "Non Professional Services", "2017-02-14T00:00:00", "53.86" ]
+, [ 49, "ADC707C4-8BE9-43DD-BC4A-3570A5E22BAB", 49, 1521050703, "913101", 1521050703, "913101", null, "Iron Mountain", "Non Professional Services", "2017-03-15T00:00:00", "68.86" ]
+, [ 50, "D05BEFAD-7BD1-4BB8-BA84-65D099160FC1", 50, 1521050703, "913101", 1521050703, "913101", null, "Iron Mountain", "Non Professional Services", "2017-04-12T00:00:00", "69.59" ]
+, [ 51, "66BCCDF5-C8CC-4673-A906-CFC8D8008D50", 51, 1521050703, "913101", 1521050703, "913101", null, "Iron Mountain", "Non Professional Services", "2017-05-09T00:00:00", "62.09" ]
+, [ 52, "63A54575-B411-4721-ADE4-1AB05BF6B234", 52, 1521050703, "913101", 1521050703, "913101", null, "Iron Mountain", "Non Professional Services", "2017-06-08T00:00:00", "62.09" ]
+, [ 53, "B748FCB3-2369-4C3E-8982-C0FCC19363EE", 53, 1521050703, "913101", 1521050703, "913101", null, "KeyBank", "Misc", "2016-07-31T00:00:00", "115.64" ]
+, [ 54, "3FAA2DB1-5ACE-4850-A691-E8FBE36C62BC", 54, 1521050703, "913101", 1521050703, "913101", null, "KeyBank", "Misc", "2016-08-31T00:00:00", "107.30" ]
+, [ 55, "16536BEA-B29E-4B96-9062-510B8DFDBCFB", 55, 1521050703, "913101", 1521050703, "913101", null, "KeyBank", "Misc", "2016-09-30T00:00:00", "106.94" ]
+, [ 56, "0C19DFA1-4FCC-4221-A7A4-3A1F8AA123AB", 56, 1521050703, "913101", 1521050703, "913101", null, "KeyBank", "Misc", "2016-10-31T00:00:00", "112.05" ]
+, [ 57, "6BAE0E7D-2C8B-41C7-AD03-2C6E6A246276", 57, 1521050703, "913101", 1521050703, "913101", null, "KeyBank", "Misc", "2017-02-28T00:00:00", "174.26" ]
+, [ 58, "454C84BB-368E-4C79-8C56-9D821ED58B02", 58, 1521050703, "913101", 1521050703, "913101", null, "Max Bibos", "Meetings & Workshops", "2016-08-09T00:00:00", "67.00" ]
+, [ 59, "5E21402C-52C0-4E56-9021-A8EE8DD618A9", 59, 1521050703, "913101", 1521050703, "913101", null, "Max Bibos", "Meetings & Workshops", "2016-10-24T00:00:00", "83.08" ]
+, [ 60, "EBE9B1BE-E985-43E7-945F-85CA1101CB1E", 60, 1521050703, "913101", 1521050703, "913101", null, "Max Bibos", "Meetings & Workshops", "2017-01-30T00:00:00", "72.32" ]
+, [ 61, "123C7E01-22A4-4A38-969D-6DF64C637B67", 61, 1521050703, "913101", 1521050703, "913101", null, "Max Bibos", "Meetings & Workshops", "2017-04-19T00:00:00", "55.83" ]
+, [ 62, "C45D0D8F-CCA1-496A-B738-5EA0B03E6F08", 62, 1521050703, "913101", 1521050703, "913101", null, "Premiere Global Service", "Telephone & Internet Access", "2016-08-09T00:00:00", "105.34" ]
+, [ 63, "9ACFEDF9-C0F7-4C9A-A52B-34C2388CE5EE", 63, 1521050703, "913101", 1521050703, "913101", null, "Premiere Global Service", "Telephone & Internet Access", "2016-10-24T00:00:00", "95.89" ]
+, [ 64, "4AE6BA13-82EF-41F8-99FF-41DC004D33C8", 64, 1521050703, "913101", 1521050703, "913101", null, "Premiere Global Service", "Telephone & Internet Access", "2017-01-30T00:00:00", "128.53" ]
+, [ 65, "295C67D1-BA61-40CE-A560-D268D2F9F18D", 65, 1521050703, "913101", 1521050703, "913101", null, "Quickbooks", "Misc", "2016-08-10T00:00:00", "100.41" ]
+, [ 66, "627B35CC-EDE3-4AA6-A92B-1E1390D0E556", 66, 1521050703, "913101", 1521050703, "913101", null, "RMI Associates LLC", "Professional Services", "2016-07-21T00:00:00", "1350.00" ]
+, [ 67, "7C214D37-9E5C-4DA1-BF17-659250A4C8CC", 67, 1521050703, "913101", 1521050703, "913101", null, "RMI Associates LLC", "Professional Services", "2017-01-03T00:00:00", "1350.00" ]
+, [ 68, "FE1CA73F-23C0-413B-A598-E04CC1674CEF", 68, 1521050703, "913101", 1521050703, "913101", null, "RMI Associates LLC", "Professional Services", "2017-06-29T00:00:00", "1350.00" ]
+, [ 69, "0BB8D426-267D-4839-9192-D9FCB0B5646B", 69, 1521050703, "913101", 1521050703, "913101", null, "Starfish Computer Corporation", "Telephone & Internet Access", "2017-02-14T00:00:00", "159.93" ]
+ ]
+}
