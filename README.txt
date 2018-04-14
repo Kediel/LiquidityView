@@ -9,7 +9,7 @@ Welcome to edit this text file appropriately..
 
 
 
-
+****************************************** REMEMBER TO SYNC THE GRADEL AFTER YOU PULL *******************************************************************************************
 
 
 Financial article links:
