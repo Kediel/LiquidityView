@@ -38,6 +38,7 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-core:15.0.0'
     implementation 'com.google.firebase:firebase-auth:15.0.0'
+    implementation 'com.firebaseui:firebase-ui-auth:3.2.2'
     implementation 'com.google.android.gms:play-services-auth:15.0.0'
 }
 
@@ -45,4 +46,9 @@ dependencies {
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
 }
 
+apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
+}
