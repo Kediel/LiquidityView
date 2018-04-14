@@ -9,26 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-        <activity
-            android:name=".FinancialBreakdown"
-            android:label="@string/title_activity_financial_breakdown"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.liquidityview.MainActivity" />
+        <activity android:name=".MainActivity">
         </activity>
-=======
-        <activity android:name=".LoginScreen"></activity>
->>>>>>> 123c7130432d69b0ddcdd1c81e1c425c80199dd0
     </application>
 
 </manifest>

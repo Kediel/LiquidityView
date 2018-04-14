@@ -1,16 +1,13 @@
 package com.example.liquidityview;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
-import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,12 +32,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void viewBreakdown(View view) {
-        Intent intent = new Intent(this, FinancialBreakdown.class);
-        startActivity(intent);
-
-    }
-
     private void setupPieChart() {
 
         List<PieEntry> pieEntries = new ArrayList<>();
@@ -50,15 +41,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         PieDataSet dataSet = new PieDataSet(pieEntries, "Budget This Month");
-
-        dataSet.setColors(ColorTemplate.MATERIAL_COLORS);
-        dataSet.setValueTextSize(15f);
-
         PieData data = new PieData(dataSet);
 
         PieChart chart = (PieChart) findViewById(R.id.chart);
         chart.setData(data);
-        chart.animateXY(1000,1000);
         chart.invalidate();
     }
 

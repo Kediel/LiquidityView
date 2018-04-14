@@ -10,12 +10,3 @@
 .externalNativeBuild
 .idea/misc.xml
 .idea/caches/build_file_checksums.ser
-<<<<<<< HEAD
-app/src/main/res/values/strings.xml
-json_example.png
-app/google-services.json
-app/src/main/res/layout/activity_main.xml
-app/src/main/res/layout/activity_main.xml
-app/src/main/res/layout/activity_main.xml
-=======
->>>>>>> 123c7130432d69b0ddcdd1c81e1c425c80199dd0

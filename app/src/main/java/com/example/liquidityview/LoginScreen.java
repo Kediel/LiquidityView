@@ -91,10 +91,11 @@ public class LoginScreen extends AppCompatActivity implements GoogleApiClient.On
     @Override
     public void onClick(View view) {
         switch(view.getId()){
-            case R.id.sign_in_button:
+            case R.id.signInButton:
                 signIn();
                 break;
             case R.id.signOutButton:
+                Log.i("mytag","info");
                 signOut();
                 break;
         }
