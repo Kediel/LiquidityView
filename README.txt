@@ -30,3 +30,5 @@ https://firebase.google.com/docs/android/setup?utm_source=welcome&utm_medium=ema
 Banking API Links:
 https://github.com/plaid/link/tree/master/webviews/examples/android -----> Legacy API, will be deleted in April 2018...
 >>>>>>> f3bd8dad718f3baec376e433e31430c3935f7bdb
+
+https://www.openbankproject.com -----> Try this instead
