@@ -1,5 +1,6 @@
 package com.example.liquidityview;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -80,13 +81,16 @@ public class FinancialBreakdown extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        FragmentManager fragmentManager = getFragmentManager();
+
+        if (id == R.id.nav_expenses) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new FirstFragment()).commit();
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_bills) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new SecondFragment()).commit();
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_payments) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new ThirdFragment()).commit();
 
         } else if (id == R.id.nav_share) {
 
