@@ -18,16 +18,15 @@
         </activity>
         <activity android:name=".MainActivity">
 
-        <activity android:name=".MainActivity">
-
         </activity>
 
-        </activity>
         <activity
             android:name=".FinancialBreakdown"
             android:label="@string/title_activity_financial_breakdown"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".SignUpActivity">
+
+        </activity>
     </application>
 
 </manifest>
