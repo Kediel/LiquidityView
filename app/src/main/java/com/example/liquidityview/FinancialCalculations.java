@@ -51,6 +51,11 @@ public class FinancialCalculations {
     double Loans(){
         // Finish me
         Object StudentLoan = (Student_D * sLoan) + (CLoan_D*CLoan_D) + (CCard_D * cCard) + (Invest_D * invest);
+
+        double final_loans = 0.0;
+
+        // Fix return statement
+        return final_loans;
     }
 
     double Insurance(){

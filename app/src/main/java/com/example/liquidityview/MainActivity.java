@@ -72,15 +72,15 @@ public class MainActivity extends AppCompatActivity {
         double interest2 = fCalculations.Interest();
 
         // Replace input 0-3 with name of input boxes on the financial_breakdown.xml file.
-        double principal = Double.valueOf(input0.getText().toString());
-        double loan = Double.valueOf(input1.getText().toString());
-        double debt = Double.valueOf(input2.getText().toString());
-        double tax = Double.valueOf(input3.getText().toString());
+        //double principal = Double.valueOf(input0.getText().toString());
+        //double loan = Double.valueOf(input1.getText().toString());
+        //double debt = Double.valueOf(input2.getText().toString());
+        //double tax = Double.valueOf(input3.getText().toString());
 
         // Calculate
-        double result = principal * FinancialCalculations.sLoan;
+        //double result = principal * FinancialCalculations.sLoan;
 
-        iCalc_result.setText("The result is: " + result);
+        //iCalc_result.setText("The result is: " + result);
     }
 
 
