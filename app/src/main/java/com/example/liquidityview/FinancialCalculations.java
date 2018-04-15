@@ -15,9 +15,9 @@ public class FinancialCalculations {
         // APR for car loan is 12%
         Object cLoan = 0.12;
         // APR for credit cards are 23.9%
-        Object cCard = 23.9%
+        Object cCard = 0.239;
         // Investment accounts gain 6% annually on average after inflation
-        Object double invest = 0.06;
+        Object invest = 0.06;
     }
 
     void Loans(){
