@@ -23,4 +23,9 @@ public class SecondFragment extends Fragment {
 
         return myView;
     }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+    }
 }

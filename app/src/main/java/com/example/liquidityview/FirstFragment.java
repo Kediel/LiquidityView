@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.charts.HorizontalBarChart;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
@@ -23,7 +24,7 @@ import java.util.ArrayList;
 public class FirstFragment extends Fragment {
 
     View myView;
-    BarChart barChart;
+    HorizontalBarChart barChart;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -46,7 +47,8 @@ public class FirstFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        BarChart barChart = (BarChart) myView.findViewById(R.id.chart1);
+        HorizontalBarChart barChart = (HorizontalBarChart) myView.findViewById(R.id.chart1);
+
 
         ArrayList<BarEntry> barEntries = new ArrayList<>();
 
@@ -58,6 +60,7 @@ public class FirstFragment extends Fragment {
         barEntries.add(new BarEntry(6, 200f));
         barEntries.add(new BarEntry(7, 40f));
 
+
         BarDataSet barDataSet = new BarDataSet(barEntries, "Categories");
 
         BarData data = new BarData(barDataSet);
@@ -68,13 +71,13 @@ public class FirstFragment extends Fragment {
         barChart.animateXY(3000,3000);
         barDataSet.setValueTextSize(15f);
 
-        String[] categories = new String[]{"School Expenses", "Transport", "Health", "Entertainment", "Clothing", "Food", "Miscellaneous"};
-        XAxis xAxis = barChart.getXAxis();
-//        xAxis.setValueFormatter(new MyXAxisValueFormatter(categories));
-        xAxis.setPosition(XAxis.XAxisPosition.BOTH_SIDED);
-        xAxis.setGranularity(1);
-        xAxis.setCenterAxisLabels(true);
-        xAxis.setAxisMinimum(1);
+//        String[] categories = new String[]{"School Expenses", "Transport", "Health", "Entertainment", "Clothing", "Food", "Miscellaneous"};
+//        XAxis xAxis = barChart.getXAxis();
+////        xAxis.setValueFormatter(new MyXAxisValueFormatter(categories));
+//        xAxis.setPosition(XAxis.XAxisPosition.BOTH_SIDED);
+//        xAxis.setGranularity(1);
+//        xAxis.setCenterAxisLabels(true);
+//        xAxis.setAxisMinimum(1);
     }
 
 //    public class MyXAxisValueFormatter implements IAxisValueFormatter {
