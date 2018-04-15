@@ -72,12 +72,12 @@ public class LoginScreen extends AppCompatActivity implements GoogleApiClient.On
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
 
-        statusTextView = (TextView) findViewById(R.id.status_textview);
-        signInButton = (SignInButton) findViewById(R.id.sign_in_button);
-        signInButton.setOnClickListener(this);
-
-        signOutButton = (Button) findViewById(R.id.signOutButton);
-        signOutButton.setOnClickListener(this);
+//        statusTextView = (TextView) findViewById(R.id.status_textview);
+//        signInButton = (SignInButton) findViewById(R.id.sign_in_button);
+//        signInButton.setOnClickListener(this);
+//
+//        signOutButton = (Button) findViewById(R.id.signOutButton);
+//        signOutButton.setOnClickListener(this);
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -174,10 +174,10 @@ public class LoginScreen extends AppCompatActivity implements GoogleApiClient.On
                 System.out.println("HELLO");
                 signIn();
                 break;
-            case R.id.signOutButton:
-                Log.i("mytag","info");
-                signOut();
-                break;
+//            case R.id.signOutButton:
+//                Log.i("mytag","info");
+//                signOut();
+//                break;
         }
     }
 }
