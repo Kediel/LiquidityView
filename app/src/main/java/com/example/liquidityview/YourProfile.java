@@ -13,12 +13,12 @@ import android.view.ViewGroup;
 
 public class YourProfile extends Fragment {
 
-    View myView;
+    View myView
 
     @Nullable
-    @Override
+    @Override;
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-
+        
         myView = inflater.inflate(R.layout.your_profile, container, false);
 
         return myView;
