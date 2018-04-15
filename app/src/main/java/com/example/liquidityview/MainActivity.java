@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     public static float animal;
     public float b;
     
-    public float weeklySavings = 10000;
+    public float weeklySavings = 100;
     public float weeklyBudget = 0;
    // private ListView mListView;
     // Used to load the 'native-lib' library on application startup.
