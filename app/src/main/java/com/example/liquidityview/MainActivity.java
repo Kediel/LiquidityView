@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         double loan2 = fCalculations.Loans();
         double debt2 = fCalculations.Debt();
         double tax2 = fCalculations.Taxes();
-        double loan2 = fCalculations.Interest();
+        double interest2 = fCalculations.Interest();
 
         // Replace input 0-3 with name of input boxes on the financial_breakdown.xml file.
         double principal = Double.valueOf(input0.getText().toString());
