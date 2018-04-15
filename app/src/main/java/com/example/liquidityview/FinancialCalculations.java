@@ -3,12 +3,26 @@ package com.example.liquidityview;
 public class FinancialCalculations {
 
     // The amount of money the student is starting with.
-    Object principal = 0.0;
+    double principal = 0.0;
+    private double Student_D;
+    private double CLoan_D;
+    private double CCard_D;
+    private double Invest_D;
+
+    private double sLoan;
+    private double cLoan;
+    private double cCard;
+    private double invest;
 
     void Debt(){
-
         // Finish me
+        
+        Object Student_D = 20000;
+        Object CLoan_D = 12000;
+        Object CCard_D = 1000;
+        Object Invest_D = 900;
 
+        Loans();
     }
 
     void Interest(){
@@ -21,20 +35,24 @@ public class FinancialCalculations {
         Object cCard = 0.239;
         // Investment accounts gain 6% annually on average after inflation
         Object invest = 0.06;
+        
     }
 
     void Loans(){
         // Finish me
-
+        Object StudentLoan = (Student_D * sLoan) + (CLoan_D*CLoan_D) + (CCard_D * cCard) + (Invest_D * invest);
     }
 
     void Insurance(){
         // Finish me
+        Object carInsurance = 400;
+        Object HealthInsurance = 200;
     }
 
     void Retirement(){
 
         // Finish me
+        Object Retirement = 0;
     }
 
     void Taxes(){
@@ -45,5 +63,7 @@ public class FinancialCalculations {
         Object iTax = 0.06;
 
     }
+    
+    
 
 }
