@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
 //    String Categories[] = {"Food", "Travel", "Miscellaneous", "Transportation", "Shopping", "Entertainment"};
     String Categories[] = { "Food", "Miscellaneous", "Transportation", "Shopping", "Entertainment"};
 
+    float Expenses[] = {100, 46, 106.3f, 67.25f, 59.8f};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -111,7 +112,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    float Expenses[] = {weeklyBudget, weeklySavings, 106.3f, 67.25f, 12, 59.8f};
 
 
     //
