@@ -83,14 +83,14 @@ public class LoginScreen extends AppCompatActivity implements GoogleApiClient.On
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
 
-//        statusTextView = (TextView) findViewById(R.id.status_textview);
+      // statusTextView = (TextView) findViewById(R.id.status_textview);
         signInButton = (SignInButton) findViewById(R.id.sign_in_button);
-//        signInButton.setOnClickListener(this);
-
-//        signInButton = (SignInButton) findViewById(R.id.sign_in_button);
+   //     signInButton.setOnClickListener(this);
+//
+//       signInButton = (SignInButton) findViewById(R.id.sign_in_button);
 //        signInButton.setOnClickListener(this);
 //
-//        signOutButton = (Button) findViewById(R.id.signOutButton);
+//     //   signOutButton = (Button) findViewById(R.id.signOutButton);
 //        signOutButton.setOnClickListener(this);
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
@@ -125,15 +125,14 @@ public class LoginScreen extends AppCompatActivity implements GoogleApiClient.On
     }
 
     private void signIn(){
-//        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
-//        startActivityForResult(signInIntent, RC_SIGN_IN);
-//        statusTextView.setText("Signed in");
+        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
+        startActivityForResult(signInIntent, RC_SIGN_IN);
+        startActivity(new Intent(LoginScreen.this, MainActivity.class));
+      //  statusTextView.setText("Signed in");
     }
-
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
         if (requestCode == RC_SIGN_IN) {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
