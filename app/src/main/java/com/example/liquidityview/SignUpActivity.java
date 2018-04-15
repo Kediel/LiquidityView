@@ -16,22 +16,40 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 
 public class SignUpActivity extends AppCompatActivity {
     private EditText txtEmailAddress;
     private EditText txtPassword;
+    private EditText txtName;
     private FirebaseAuth firebaseAuth;
-
-
+    DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
+    DatabaseReference mUserIdRef = mRootRef.child("userId");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
         txtEmailAddress = findViewById(R.id.txtEmailRegistration);
         txtPassword =  findViewById(R.id.txtPasswordRegistration);
+        txtName = findViewById(R.id.txtNameRegistration);
         firebaseAuth = FirebaseAuth.getInstance();
     }
     public void btnRegisterUser_Click(View v){
+        if (txtEmailAddress.getText().toString().isEmpty()) {
+            Toast.makeText(SignUpActivity.this, "Please Enter Your Email", Toast.LENGTH_LONG).show();
+            return;
+        }
+        else if (txtPassword.getText().toString().isEmpty()) {
+            Toast.makeText(SignUpActivity.this, "Please Enter Your Password", Toast.LENGTH_LONG).show();
+            return;
+        }
+        else if (txtName.getText().toString().isEmpty()) {
+            Toast.makeText(SignUpActivity.this, "Please Enter Your Name", Toast.LENGTH_LONG).show();
+            return;
+        }
         (firebaseAuth.createUserWithEmailAndPassword(txtEmailAddress.getText().toString(), txtPassword.getText().toString()))
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
@@ -39,6 +57,10 @@ public class SignUpActivity extends AppCompatActivity {
 
                 if (task.isSuccessful()) {
                     Toast.makeText(SignUpActivity.this, "Registration successful", Toast.LENGTH_LONG).show();
+                    FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+                    initializeData();
+
                     Intent i = new Intent(SignUpActivity.this, LoginScreen.class);
                     startActivity(i);
                 }
@@ -48,5 +70,22 @@ public class SignUpActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private void initializeData() {
+        FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+
+        //Set id
+
+        DatabaseReference mIdRef = mUserIdRef.child(currentFirebaseUser.getUid());
+        DatabaseReference mBudgetRef = mIdRef.child("Weekly Budget");
+        DatabaseReference mSaveRef = mIdRef.child("Weekly Savings");
+        DatabaseReference mBillDueRef = mIdRef.child("Bill Due");
+        DatabaseReference mNameRef = mIdRef.child("Name");
+        mNameRef.setValue(txtName.getText().toString());
+        mBudgetRef.setValue("PLACE HOLDER");
+        mSaveRef.setValue("PLACE HOLDER");
+        mBillDueRef.setValue("PLACE HOLDER");
+
     }
 }
