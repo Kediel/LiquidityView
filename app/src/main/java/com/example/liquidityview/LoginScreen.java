@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,6 +44,11 @@ public class LoginScreen extends AppCompatActivity implements GoogleApiClient.On
     private static final String TAG = "SignInActivity";
     private static final int RC_SIGN_IN = 9001;
 
+    //for text boxes
+    private EditText txtEmailLogin;
+    private EditText txtPwd;
+    private FirebaseAuth firebaseAuth;
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -54,6 +61,10 @@ public class LoginScreen extends AppCompatActivity implements GoogleApiClient.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
         mAuth = FirebaseAuth.getInstance();
+
+        txtEmailLogin = findViewById(R.id.txtEmailLogin);
+        txtPwd = findViewById(R.id.txtPasswordLogin);
+        firebaseAuth = FirebaseAuth.getInstance();
 
         // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -73,6 +84,9 @@ public class LoginScreen extends AppCompatActivity implements GoogleApiClient.On
                 .build();
 
 //        statusTextView = (TextView) findViewById(R.id.status_textview);
+        signInButton = (SignInButton) findViewById(R.id.sign_in_button);
+//        signInButton.setOnClickListener(this);
+
 //        signInButton = (SignInButton) findViewById(R.id.sign_in_button);
 //        signInButton.setOnClickListener(this);
 //
@@ -82,17 +96,38 @@ public class LoginScreen extends AppCompatActivity implements GoogleApiClient.On
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                if (firebaseAuth.getCurrentUser() != null){
-                    startActivity(new Intent(LoginScreen.this, MainActivity.class));
-                }
+//                if (firebaseAuth.getCurrentUser() != null){
+//                    startActivity(new Intent(LoginScreen.this, MainActivity.class));
+//                }
             }
         };
     }
+    public void btnUserRegistration_Click(View v){
+        Intent i = new Intent(LoginScreen.this, SignUpActivity.class);
+        startActivity(i);
+    }
+    public void btnUserLogin_Click(View v) {
+        (firebaseAuth.signInWithEmailAndPassword(txtEmailLogin.getText().toString(), txtPwd.getText().toString()))
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
+                            Toast.makeText(LoginScreen.this, "Login Successful", Toast.LENGTH_LONG).show();
+                            Intent i = new Intent(LoginScreen.this, MainActivity.class);
+                            i.putExtra("Email", firebaseAuth.getCurrentUser().getEmail());
+                            startActivity(i);
+                        }else{
+                            Log.e("ERRor", task.getException().toString());
+                            Toast.makeText(LoginScreen.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
+    }
 
     private void signIn(){
-        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
-        startActivityForResult(signInIntent, RC_SIGN_IN);
-        statusTextView.setText("Signed in");
+//        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
+//        startActivityForResult(signInIntent, RC_SIGN_IN);
+//        statusTextView.setText("Signed in");
     }
 
     @Override
