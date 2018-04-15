@@ -78,13 +78,13 @@ public class SignUpActivity extends AppCompatActivity {
         //Set id
 
         DatabaseReference mIdRef = mUserIdRef.child(currentFirebaseUser.getUid());
-        DatabaseReference mBudgetRef = mIdRef.child("Weekly Budget");
-        DatabaseReference mSaveRef = mIdRef.child("Weekly Savings");
-        DatabaseReference mBillDueRef = mIdRef.child("Bill Due");
-        DatabaseReference mNameRef = mIdRef.child("Name");
+        DatabaseReference mBudgetRef = mIdRef.child("weeklybudget");
+        DatabaseReference mSaveRef = mIdRef.child("weeklysavings");
+        DatabaseReference mBillDueRef = mIdRef.child("billdue");
+        DatabaseReference mNameRef = mIdRef.child("name");
         mNameRef.setValue(txtName.getText().toString());
-        mBudgetRef.setValue("PLACE HOLDER");
-        mSaveRef.setValue("PLACE HOLDER");
+        mBudgetRef.setValue(20);
+        mSaveRef.setValue(100);
         mBillDueRef.setValue("PLACE HOLDER");
 
     }
