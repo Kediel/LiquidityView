@@ -10,16 +10,16 @@
             android:title="Your Profile" />
         <item
             android:id="@+id/nav_expenses"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/expenses"
             android:title="Expenses" />
         <item
             android:id="@+id/nav_bills"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/bills"
             android:title="Bills" />
         <item
-            android:id="@+id/nav_payments"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Payments" />
+            android:id="@+id/nav_income"
+            android:icon="@drawable/income"
+            android:title="Income" />
     </group>
 
     <item android:title="Communicate">

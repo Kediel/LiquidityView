@@ -92,7 +92,7 @@ public class FinancialBreakdown extends AppCompatActivity
         } else if (id == R.id.nav_bills) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new SecondFragment()).commit();
 
-        } else if (id == R.id.nav_payments) {
+        } else if (id == R.id.nav_income) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new ThirdFragment()).commit();
 
         } else if (id == R.id.nav_share) {
