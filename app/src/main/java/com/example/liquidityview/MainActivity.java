@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     
     public float weeklySavings = 10000;
     public float weeklyBudget = 0;
-   // private ListView mListView;
+    // private ListView mListView;
     // Used to load the 'native-lib' library on application startup.
     static {
         System.loadLibrary("native-lib");
@@ -53,13 +53,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       // mListView = findViewById(R.id.listview);
+        //mListView = findViewById(R.id.listview);
         mAuth = FirebaseAuth.getInstance();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         myRef = mFirebaseDatabase.getReference();
         FirebaseUser user = mAuth.getCurrentUser();
         userID = user.getUid();
-//        mRef = new Firebase("https://liquidityview.firebaseio.com/userId");
+        //mRef = new Firebase("https://liquidityview.firebaseio.com/userId");
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -128,6 +128,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void viewBreakdown(View view) {
+        Intent intent = new Intent(this, FinancialBreakdown.class);
+        startActivity(intent);
+    }
+
+    public void viewTips(View view) {
         Intent intent = new Intent(this, FinancialBreakdown.class);
         startActivity(intent);
     }
