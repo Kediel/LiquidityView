@@ -85,7 +85,9 @@ public class FinancialBreakdown extends AppCompatActivity
 
         if (id == R.id.nav_expenses) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new FirstFragment()).commit();
-            // Handle the camera action
+
+
+
         } else if (id == R.id.nav_bills) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new SecondFragment()).commit();
 
