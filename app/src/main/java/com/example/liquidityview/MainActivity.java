@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     static {
         System.loadLibrary("native-lib");
     }
-    float Expenses[] = {83, 40.5f, 48, 25, 59};
+//    float Expenses[] = {83, 40.5f, 48, 25, 59};
 //    String Categories[] = {"Food", "Travel", "Miscellaneous", "Transportation", "Shopping", "Entertainment"};
     String Categories[] = { "Food", "Miscellaneous", "Transportation", "Shopping", "Entertainment"};
 
@@ -149,10 +149,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Goes to the Manual Entry page once the "Manual Entry" button is clicked.
-    public void manualClick(View v){
-        Intent i = new Intent(MainActivity.this, ManualActivity.class);
-        startActivity(i);
-    }
+//    public void manualClick(View v){
+//        Intent i = new Intent(MainActivity.this, ManualActivity.class);
+//        startActivity(i);
+//    }
 
     // Goes to the Financial Breakdown page once the "View Breakdown" button is clicked.
     public void viewBreakdown(View view) {
