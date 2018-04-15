@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,59 +41,79 @@ public class MainActivity extends AppCompatActivity {
     private String userID;
     public static float animal;
     public float b;
-    
+    private EditText Income;
+    private EditText Loan1;
+    private EditText Loan2;
     public float weeklySavings = 10000;
     public float weeklyBudget = 0;
-   // private ListView mListView;
+
+    // private ListView mListView;
     // Used to load the 'native-lib' library on application startup.
     static {
         System.loadLibrary("native-lib");
     }
-    String Categories[] = { "Food", "Travel", "Miscellaneous", "Transportation", "Shopping", "Entertainment"};
+
+    String Categories[] = {"Food", "Travel", "Miscellaneous", "Transportation", "Shopping", "Entertainment"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       // mListView = findViewById(R.id.listview);
+        Income = (EditText) findViewById(R.id.Income);
+        Loan1 = (EditText) findViewById(R.id.Loan1);
+        Income = (EditText) findViewById(R.id.Loan2);
+        Button calc = (Button) findViewById(R.id.calculate);
+        // mListView = findViewById(R.id.listview);
         mAuth = FirebaseAuth.getInstance();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         myRef = mFirebaseDatabase.getReference();
         FirebaseUser user = mAuth.getCurrentUser();
         userID = user.getUid();
+
 //        mRef = new Firebase("https://liquidityview.firebaseio.com/userId");
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
-                if(user != null){
+                if (user != null) {
                     toastMessage("Successfully signed in with" + user.getEmail());
-                }else{
+                } else {
                     toastMessage("Successfully signed out.");
                 }
             }
         };
 
-        final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = database.getReference("server/path/to/userid");
-//
-//        ref.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//                UserPro profile = dataSnapshot.getValue(userid.class);
-//                System.out.println(profile.getUserId());
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//               System.out.println("System Failed");
-//            }
-//        });
+       /* public static class UserID {
 
+        }
+
+    }
+
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = database.getReference("server/path/to/userid")
+
+        ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                Userid profile = dataSnapshot.getValue(userid.class);
+                System.out.println(profile.getUserId());
+            }
+
+            @Override
+          public void onCancelled(DatabaseError databaseError) {
+               System.out.println("System Failed");
+          }
+        });
+*/
         setupPieChart();
     }
-    float Expenses[] = {weeklyBudget,weeklySavings, 106.3f, 67.25f, 12, 59.8f };
 
+    public void manualClick(View v){
+        Intent i = new Intent(MainActivity.this, ManualActivity.class);
+        startActivity(i);
+    }
+
+    float Expenses[] = {weeklyBudget, weeklySavings, 106.3f, 67.25f, 12, 59.8f};
 
 
     //
@@ -112,19 +134,21 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onStart() {
-        super.onStart();;
+        super.onStart();
+        ;
         mAuth.addAuthStateListener(mAuthListener);
     }
 
     @Override
     public void onStop() {
         super.onStop();
-        if(mAuthListener != null) {
+        if (mAuthListener != null) {
             mAuth.removeAuthStateListener(mAuthListener);
         }
     }
-    private void toastMessage(String message){
-        Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
+
+    private void toastMessage(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
     public void viewBreakdown(View view) {
@@ -153,26 +177,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Function that will calculate based on the interest specified in the FinancialCalculations.java class.
-    private void makeCalculations() {
+    public class Calc {
 
-        // Import methods from the FinancialCalculations class.
-        FinancialCalculations fCalculations = new FinancialCalculations();
-        double loan2 = fCalculations.Loans();
-        double debt2 = fCalculations.Debt();
-        double tax2 = fCalculations.Taxes();
-        double interest2 = fCalculations.Interest();
 
-        // Replace input 0-3 with name of input boxes on the financial_breakdown.xml file.
-        //double principal = Double.valueOf(input0.getText().toString());
-        //double loan = Double.valueOf(input1.getText().toString());
-        //double debt = Double.valueOf(input2.getText().toString());
-        //double tax = Double.valueOf(input3.getText().toString());
 
-        // Calculate
-        //double result = principal * FinancialCalculations.sLoan;
+        private void make() {
 
-        //iCalc_result.setText("The result is: " + result);
+            // Import methods from the FinancialCalculations class.
+        /*FinancialCalculations fCalculations = new FinancialCalculations();
+            double principle = 3000;
+            double loan3 = fCalculations.Loans();
+            double debt2 = fCalculations.Debt();
+            double tax2 = fCalculations.Taxes();
+            double interest2 = fCalculations.Interest();
+
+            double result = principle - loan3;
+            System.out.println(result);*/
+
+
+            // Replace input 0-3 with name of input boxes on the financial_breakdown.xml file.
+
+            double principle = Double.valueOf(Income.getText().toString());
+            double loan1 = Double.valueOf(Loan1.getText().toString());
+            double loan2 = Double.valueOf(Loan2.getText().toString());
+
+
+        }
     }
-
-
 }
+
+
