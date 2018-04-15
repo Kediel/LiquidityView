@@ -112,11 +112,6 @@ public class MainActivity extends AppCompatActivity {
         setupPieChart();
     }
 
-    public void manualClick(View v){
-        Intent i = new Intent(MainActivity.this, ManualActivity.class);
-        startActivity(i);
-    }
-
     float Expenses[] = {weeklyBudget, weeklySavings, 106.3f, 67.25f, 12, 59.8f};
 
 
@@ -139,7 +134,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-        ;
         mAuth.addAuthStateListener(mAuthListener);
     }
 
@@ -155,11 +149,19 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
+    // Goes to the Manual Entry page once the "Manual Entry" button is clicked.
+    public void manualClick(View v){
+        Intent i = new Intent(MainActivity.this, ManualActivity.class);
+        startActivity(i);
+    }
+
+    // Goes to the Financial Breakdown page once the "View Breakdown" button is clicked.
     public void viewBreakdown(View view) {
         Intent intent = new Intent(this, FinancialBreakdown.class);
         startActivity(intent);
     }
 
+    // Goes to the Tips and Pointers page once the "Tips/Stats" button is clicked.
     public void viewTips(View view) {
         Intent intent = new Intent(this, TipsandStats.class);
         startActivity(intent);
