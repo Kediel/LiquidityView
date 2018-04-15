@@ -5,11 +5,8 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -20,12 +17,8 @@ import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.ChildEventListener;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,16 +46,16 @@ public class MainActivity extends AppCompatActivity {
     static {
         System.loadLibrary("native-lib");
     }
-
+    float Expenses[] = {83, 40.5f, 48, 25, 59};
 //    String Categories[] = {"Food", "Travel", "Miscellaneous", "Transportation", "Shopping", "Entertainment"};
-    String Categories[] = { "Weekly Savings", "Weekly Budget", "Miscellaneous", "Transportation", "Shopping", "Entertainment"};
+    String Categories[] = { "Food", "Miscellaneous", "Transportation", "Shopping", "Entertainment"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Income = (EditText) findViewById(R.id.Income);
-        Loan1 = (EditText) findViewById(R.id.Loan1);
+        Loan1 = (EditText) findViewById(R.id.Savings);
         Income = (EditText) findViewById(R.id.Loan2);
         Button calc = (Button) findViewById(R.id.calculate);
         // mListView = findViewById(R.id.listview);
@@ -117,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    float Expenses[] = {weeklyBudget, weeklySavings, 106.3f, 67.25f, 12, 59.8f};
+
 
 
     //
