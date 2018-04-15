@@ -19,11 +19,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transactions"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/transaction_view"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:lineSpacingExtra="5dp"
+            android:text="Chicken:     $18\nMovie Tickets:     $5\nT-Shirt:             $25\nBeef:             $10\nFlight Tickets:    $18\nTaxi:             $8\nStove:           $80"/>
 
     </ScrollView>
 </RelativeLayout>
