@@ -47,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
     public float weeklySavings = 10000;
     public float weeklyBudget = 0;
 
+    
+    public float weeklySavings = 100;
+    public float weeklyBudget = 0;
     // private ListView mListView;
     // Used to load the 'native-lib' library on application startup.
     static {
@@ -54,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     String Categories[] = {"Food", "Travel", "Miscellaneous", "Transportation", "Shopping", "Entertainment"};
+    String Categories[] = { "Weekly Savings", "Weekly Budget", "Miscellaneous", "Transportation", "Shopping", "Entertainment"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         Income = (EditText) findViewById(R.id.Loan2);
         Button calc = (Button) findViewById(R.id.calculate);
         // mListView = findViewById(R.id.listview);
+        //mListView = findViewById(R.id.listview);
         mAuth = FirebaseAuth.getInstance();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         myRef = mFirebaseDatabase.getReference();
@@ -71,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         userID = user.getUid();
 
 //        mRef = new Firebase("https://liquidityview.firebaseio.com/userId");
+        //mRef = new Firebase("https://liquidityview.firebaseio.com/userId");
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -153,6 +159,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void viewBreakdown(View view) {
         Intent intent = new Intent(this, FinancialBreakdown.class);
+        startActivity(intent);
+    }
+
+    public void viewTips(View view) {
+        Intent intent = new Intent(this, TipsandStats.class);
         startActivity(intent);
     }
 

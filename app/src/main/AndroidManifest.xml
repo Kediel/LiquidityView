@@ -25,6 +25,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SignUpActivity"></activity>
         <activity android:name=".ManualActivity"></activity>
+        <activity
+            android:name=".TipsandStats"
+            android:label="@string/title_activity_tipsand_stats"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
