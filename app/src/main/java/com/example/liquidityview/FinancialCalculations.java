@@ -2,6 +2,9 @@ package com.example.liquidityview;
 
 public class FinancialCalculations {
 
+    // The amount of money the student is starting with.
+    Object principal = 0.0;
+
     void Debt(){
 
         // Finish me
@@ -37,7 +40,9 @@ public class FinancialCalculations {
     void Taxes(){
         // Finish me
         // 7.65% goes to Social Security/ Medicare until you reach 127k.
+        Object ssMedicare = 0.0765;
         // Most states have an income tax of 6%
+        Object iTax = 0.06;
 
     }
 
