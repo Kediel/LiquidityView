@@ -19,7 +19,7 @@ import java.util.ArrayList;
  * Created by QuanPhan on 4/14/18.
  */
 
-public class ThirdFragment extends Fragment {
+public class FourthFragment extends Fragment {
 
     View myView;
     HorizontalBarChart barChart;
@@ -34,7 +34,7 @@ public class ThirdFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
 
-        myView = inflater.inflate(R.layout.third_layout, container, false);
+        myView = inflater.inflate(R.layout.fourth_layout, container, false);
 
         return myView;
     }
@@ -43,14 +43,18 @@ public class ThirdFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        HorizontalBarChart barChart = (HorizontalBarChart) myView.findViewById(R.id.chart3);
+        HorizontalBarChart barChart = (HorizontalBarChart) myView.findViewById(R.id.chart4);
 
 
         ArrayList<BarEntry> barEntries = new ArrayList<>();
 
-        barEntries.add(new BarEntry(1, 2000f));
-        barEntries.add(new BarEntry(2, 500f));
-        barEntries.add(new BarEntry(3, 1000f));
+        barEntries.add(new BarEntry(1, 200f));
+        barEntries.add(new BarEntry(2, 52f));
+        barEntries.add(new BarEntry(3, 16.5f));
+        barEntries.add(new BarEntry(4, 90.5f));
+        barEntries.add(new BarEntry(5, 120.5f));
+        barEntries.add(new BarEntry(6, 60f));
+
 
         BarDataSet barDataSet = new BarDataSet(barEntries, "Categories");
 

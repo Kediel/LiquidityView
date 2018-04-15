@@ -59,7 +59,7 @@ public class SecondFragment extends Fragment {
 
         barChart.setData(data);
         barDataSet.setColors(ColorTemplate.MATERIAL_COLORS);
-        barChart.animateXY(3000,3000);
+        barChart.animateXY(2000,2000);
         barDataSet.setValueTextSize(15f);
     }
 }

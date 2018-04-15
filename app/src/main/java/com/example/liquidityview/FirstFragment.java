@@ -53,9 +53,9 @@ public class FirstFragment extends Fragment {
         barEntries.add(new BarEntry(1, 240f));
         barEntries.add(new BarEntry(2, 88f));
         barEntries.add(new BarEntry(3, 150f));
-        barEntries.add(new BarEntry(4, 55f));
+        barEntries.add(new BarEntry(4, -55f));
         barEntries.add(new BarEntry(5, 340f));
-        barEntries.add(new BarEntry(6, 200f));
+        barEntries.add(new BarEntry(6, -200f));
         barEntries.add(new BarEntry(7, 40f));
 
 
@@ -66,7 +66,7 @@ public class FirstFragment extends Fragment {
 
         barChart.setData(data);
         barDataSet.setColors(ColorTemplate.MATERIAL_COLORS);
-        barChart.animateXY(3000,3000);
+        barChart.animateXY(2000,2000);
         barDataSet.setValueTextSize(15f);
 
 //        String[] categories = new String[]{"School Expenses", "Transport", "Health", "Entertainment", "Clothing", "Food", "Miscellaneous"};
