@@ -55,7 +55,11 @@ public class LoginScreen extends AppCompatActivity implements GoogleApiClient.On
         setContentView(R.layout.activity_login_screen);
         mAuth = FirebaseAuth.getInstance();
 
-
+        // Configure Google Sign In
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build();
 
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .enableAutoManage(this, new GoogleApiClient.OnConnectionFailedListener() {
@@ -79,17 +83,11 @@ public class LoginScreen extends AppCompatActivity implements GoogleApiClient.On
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if (firebaseAuth.getCurrentUser() != null){
-                    
+                    startActivity(new Intent(LoginScreen.this, MainActivity.class));
                 }
             }
         };
     }
-
-    // Configure Google Sign In
-    GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestEmail()
-            .build();
-
 
     private void signIn(){
         Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
