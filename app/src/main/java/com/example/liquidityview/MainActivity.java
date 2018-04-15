@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void viewTips(View view) {
-        Intent intent = new Intent(this, FinancialBreakdown.class);
+        Intent intent = new Intent(this, TipsandStats.class);
         startActivity(intent);
     }
 
