@@ -83,10 +83,11 @@ public class FinancialBreakdown extends AppCompatActivity
 
         FragmentManager fragmentManager = getFragmentManager();
 
-        if (id == R.id.nav_expenses) {
+        if (id == R.id.nav_profile) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new YourProfile()).commit();
+        }
+        else if (id == R.id.nav_expenses) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new FirstFragment()).commit();
-
-
 
         } else if (id == R.id.nav_bills) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new SecondFragment()).commit();
@@ -99,6 +100,7 @@ public class FinancialBreakdown extends AppCompatActivity
         } else if (id == R.id.nav_send) {
 
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
