@@ -44,8 +44,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText Income;
     private EditText Loan1;
     private EditText Loan2;
-    public float weeklySavings = 10000;
-    public float weeklyBudget = 0;
 
     
     public float weeklySavings = 100;
@@ -56,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         System.loadLibrary("native-lib");
     }
 
-    String Categories[] = {"Food", "Travel", "Miscellaneous", "Transportation", "Shopping", "Entertainment"};
+//    String Categories[] = {"Food", "Travel", "Miscellaneous", "Transportation", "Shopping", "Entertainment"};
     String Categories[] = { "Weekly Savings", "Weekly Budget", "Miscellaneous", "Transportation", "Shopping", "Entertainment"};
 
     @Override
