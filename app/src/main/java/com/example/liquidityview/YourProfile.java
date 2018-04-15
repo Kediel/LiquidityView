@@ -23,4 +23,6 @@ public class YourProfile extends Fragment {
 
         return myView;
     }
+
 }
+

@@ -87,6 +87,9 @@ public class LoginScreen extends AppCompatActivity implements GoogleApiClient.On
         signInButton = (SignInButton) findViewById(R.id.sign_in_button);
 //        signInButton.setOnClickListener(this);
 
+//        signInButton = (SignInButton) findViewById(R.id.sign_in_button);
+//        signInButton.setOnClickListener(this);
+//
 //        signOutButton = (Button) findViewById(R.id.signOutButton);
 //        signOutButton.setOnClickListener(this);
 
