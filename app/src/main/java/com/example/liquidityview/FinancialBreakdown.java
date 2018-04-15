@@ -86,7 +86,7 @@ public class FinancialBreakdown extends AppCompatActivity
         if (id == R.id.nav_profile) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new YourProfile()).commit();
         }
-        else if (id == R.id.nav_expenses) {
+        else if (id == R.id.nav_bank_activity) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new FirstFragment()).commit();
 
         } else if (id == R.id.nav_bills) {
@@ -94,6 +94,9 @@ public class FinancialBreakdown extends AppCompatActivity
 
         } else if (id == R.id.nav_income) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new ThirdFragment()).commit();
+
+        } else if (id == R.id.nav_expenses) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new FourthFragment()).commit();
 
         } else if (id == R.id.nav_share) {
 

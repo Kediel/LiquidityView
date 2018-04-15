@@ -13,6 +13,10 @@
             android:icon="@drawable/expenses"
             android:title="Expenses" />
         <item
+            android:id="@+id/nav_bank_activity"
+            android:icon="@drawable/expenses"
+            android:title="Bank Activity" />
+        <item
             android:id="@+id/nav_bills"
             android:icon="@drawable/bills"
             android:title="Bills" />
