@@ -107,21 +107,23 @@ public class LoginScreen extends AppCompatActivity implements GoogleApiClient.On
         startActivity(i);
     }
     public void btnUserLogin_Click(View v) {
-        (firebaseAuth.signInWithEmailAndPassword(txtEmailLogin.getText().toString(), txtPwd.getText().toString()))
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            Toast.makeText(LoginScreen.this, "Login Successful", Toast.LENGTH_LONG).show();
-                            Intent i = new Intent(LoginScreen.this, MainActivity.class);
-                            i.putExtra("Email", firebaseAuth.getCurrentUser().getEmail());
-                            startActivity(i);
-                        }else{
-                            Log.e("ERRor", task.getException().toString());
-                            Toast.makeText(LoginScreen.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+        if(!txtEmailLogin.getText().toString().isEmpty()) {
+            (firebaseAuth.signInWithEmailAndPassword(txtEmailLogin.getText().toString(), txtPwd.getText().toString()))
+                    .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(LoginScreen.this, "Login Successful", Toast.LENGTH_LONG).show();
+                                Intent i = new Intent(LoginScreen.this, MainActivity.class);
+                                i.putExtra("Email", firebaseAuth.getCurrentUser().getEmail());
+                                startActivity(i);
+                            } else {
+                                Log.e("ERRor", task.getException().toString());
+                                Toast.makeText(LoginScreen.this, task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                            }
                         }
-                    }
-                });
+                    });
+        }
     }
 
     private void signIn(){
