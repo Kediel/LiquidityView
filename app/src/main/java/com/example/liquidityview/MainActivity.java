@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     static {
         System.loadLibrary("native-lib");
     }
-    String Categories[] = { "Food", "Travel", "Miscellaneous", "Transportation", "Shopping", "Entertainment"};
+    String Categories[] = { "Weekly Savings", "Weekly Budget", "Miscellaneous", "Transportation", "Shopping", "Entertainment"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
