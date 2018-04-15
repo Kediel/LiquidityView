@@ -9,4 +9,6 @@
     <color name="TextColor">#5E35B1</color>
     <color name="Orange">#ffb847</color>
     <color name="DarkTeal">#29939b</color>
+    <color name="White">#f8f8ff</color>
+    <color name="TransWhite">#80ffffff</color>
 </resources>
