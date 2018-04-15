@@ -24,6 +24,7 @@
             android:label="@string/title_activity_financial_breakdown"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".ManualActivity"></activity>
         <activity
             android:name=".TipsandStats"
             android:label="Tips and Pointers"
