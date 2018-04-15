@@ -155,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
     // Goes to the Financial Breakdown page once the "View Breakdown" button is clicked.
-    public void viewProfile(View view) {
+    public void viewBreakdown(View view) {
         Intent intent = new Intent(this, FinancialBreakdown.class);
         startActivity(intent);
     }
