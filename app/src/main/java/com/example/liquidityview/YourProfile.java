@@ -23,8 +23,8 @@ public class YourProfile extends Fragment implements View.OnClickListener {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
     }
+
 
     @Nullable
     @Override
@@ -39,24 +39,26 @@ public class YourProfile extends Fragment implements View.OnClickListener {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
         checkbox_camera = myView.findViewById(R.id.checkbox_camera);
         checkbox_gift = myView.findViewById(R.id.checkbox_gift);
         checkbox_camera.setOnClickListener(this);
         checkbox_gift.setOnClickListener(this);
-
     }
 
-    @Override
+        @Override
     public void onClick(View v) {
         if (v.getId() == R.id.checkbox_camera) {
             if (checkbox_camera.isChecked()) {
                 Toast.makeText(getContext(), "Checkbox checked", Toast.LENGTH_SHORT).show();
+                return;
             }
         }
 
         if (v.getId() == R.id.checkbox_gift) {
             if (checkbox_gift.isChecked()) {
                 Toast.makeText(getContext(), "Checkbox checked", Toast.LENGTH_SHORT).show();
+                return;
             }
         }
     }
