@@ -13,14 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </FrameLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        
-
         <TextView
             android:id="@+id/transaction_view"
             android:layout_marginLeft="30dp"
@@ -30,6 +22,7 @@
             android:textSize="20dp"
             android:lineSpacingExtra="5dp"
             android:text="Chicken:     $18\nMovie Tickets:     $5\nT-Shirt:             $25\nBeef:             $10\nFlight Tickets:    $18\nTaxi:             $8\nStove:           $80"/>
+    </FrameLayout>
 
-    </ScrollView>
+
 </RelativeLayout>
