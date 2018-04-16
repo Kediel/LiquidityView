@@ -132,7 +132,8 @@
                             android:layout_height="wrap_content"
                             android:checked="true"
                             android:text="Buy a new camera"
-                            android:textColor="@color/LightTeal" />
+                            android:textColor="@color/LightTeal"
+                            />
 
                         <CheckBox
                             android:id="@+id/checkbox_gift"
